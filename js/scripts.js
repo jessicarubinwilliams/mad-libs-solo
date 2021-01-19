@@ -17,13 +17,10 @@ $(document).ready(function() {
 
     const madLibArray = ["person1", "person2", "animal", "exclamation", "verb", "noun"];
 
-
-
     madLibArray.forEach(function(lib){
       let input = $('input#' + lib).val();
       $('span.' + lib).text(input);
     });
-
 
     $("#story").show();
   });
